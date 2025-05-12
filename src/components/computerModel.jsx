@@ -32,7 +32,7 @@ const ComputerModel = () => {
   const [modelError, setModelError] = useState(false);
   
   // Try to load the model
-  const { scene, animations } = useGLTF('/models/computer-optimized.glb', 
+  const { scene, animations } = useGLTF(`${import.meta.env.BASE_URL}models/computer-optimized.glb`, 
     // Success callback
     () => {
       console.log('Model loaded successfully');
@@ -185,7 +185,7 @@ const ContactExperience = () => {
 
 // Try to preload the model
 try {
-  useGLTF.preload('/models/computer-optimized.glb');
+  useGLTF.preload(`${import.meta.env.BASE_URL}models/computer-optimized.glb`);
   console.log('Preloaded computer model');
 } catch (error) {
   console.error('Failed to preload model:', error);

@@ -9,7 +9,7 @@ import { useGLTF } from "@react-three/drei";
 
 export function Computer(props) {
   const { nodes, materials } = useGLTF(
-    "/models/computer-optimized-transformed.glb"
+    `${import.meta.env.BASE_URL}models/computer-optimized-transformed.glb`
   );
   return (
     <group
@@ -34,4 +34,4 @@ export function Computer(props) {
   );
 }
 
-useGLTF.preload("/models/computer-optimized-transformed.glb");
+useGLTF.preload(`${import.meta.env.BASE_URL}models/computer-optimized-transformed.glb`);
