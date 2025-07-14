@@ -1,7 +1,7 @@
 import React from "react";
-import TitleHeader from "../components/TitleHeader";
+import Titleheader from "../components/Titleheader";
 import { testimonials } from "../constants";
-import GlowCard from "../components/GlowCard";
+import Glowcard from "../components/Glowcard";
 
 export const Testimonials = () => {
   return (
@@ -10,32 +10,30 @@ export const Testimonials = () => {
       className="flex-center section-padding"
     >
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
+        <Titleheader
           title="What People Say About Me?"
           sub="⭐️ Client Feedback Highlights"
         />
 
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
           {testimonials.map((testimonial) => (
-            <GlowCard
+            <Glowcard
               card={testimonial}
               key={testimonial.name}
             >
               <div className="flex items-center gap-3">
                 <div>
                   <img
-                    src={testimonial.imgPath}
+                    src={`${import.meta.env.BASE_URL}images/${testimonial.imgPath}`}
                     alt={testimonial.name}
                   />
                 </div>
-                <p className="text-white-50 font-bold">
-                  {testimonial.name}
-                </p>
+                <p className="text-white-50 font-bold">{testimonial.name}</p>
                 <p className="text-white-50 font-bold">
                   {testimonial.mentions}
                 </p>
               </div>
-            </GlowCard>
+            </Glowcard>
           ))}
         </div>
       </div>

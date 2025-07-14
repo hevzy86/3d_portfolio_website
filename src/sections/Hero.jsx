@@ -1,10 +1,10 @@
 import React from "react";
 import { words } from "../constants";
-import Button from "../components/Button";
-import HeroExperience from "../components/HeroModels/HeroExperience";
+import Button from "../components/button";
+import Heroexperience from "../components/Heromodels/Heroexperience";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import AnimatedCounter from "../components/AnimatedCounter";
+import AnimatedCounter from "../components/Animatedcounter";
 
 const Hero = () => {
   useGSAP(() => {
@@ -31,7 +31,7 @@ const Hero = () => {
     >
       <div className="absolute top-0 left-0 z-10">
         <img
-          src="/images/bg.png"
+          src={`${import.meta.env.BASE_URL}images/bg.png`}
           alt="background"
         />
       </div>
@@ -66,8 +66,7 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Adrian, a developer based in Croatia with a passion for
-              code.
+              I'm Vladimir developer from San Francisco
             </p>
             <Button
               className="md:w-80 md:h-16 w-60 h-12"
@@ -80,7 +79,7 @@ const Hero = () => {
 
         <figure>
           <div className="hero-3d-layout">
-            <HeroExperience />
+            <Heroexperience />
           </div>
         </figure>
       </div>

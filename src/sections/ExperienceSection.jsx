@@ -1,7 +1,7 @@
 import React from "react";
-import TitleHeader from "../components/TitleHeader";
+import Titleheader from "../components/Titleheader";
 import { expCards } from "../constants";
-import GlowCard from "../components/GlowCard";
+import Glowcard from "../components/Glowcard";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -82,7 +82,7 @@ const ExperienceSection = () => {
       className="w-full md:mt-40 mt-20 section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader
+        <Titleheader
           title="Professional Work Experience"
           sub="💼Career Overview"
         />
@@ -98,7 +98,7 @@ const ExperienceSection = () => {
                   className="xl:w-2/6"
                   key={card.title}
                 >
-                  <GlowCard
+                  <Glowcard
                     card={card}
                     index={index}
                   >
@@ -109,7 +109,7 @@ const ExperienceSection = () => {
                         className="w-full h-auto object-contain rounded-xl"
                       />
                     </div>
-                  </GlowCard>
+                  </Glowcard>
                 </div>
 
                 <div className="xl:w-4/6 md:w-3/4 w-full">

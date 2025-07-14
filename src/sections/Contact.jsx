@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import SimpleComputerModel from "../components/SimpleComputerModel";
+import Simplecomputermodel from "../components/Simplecomputermodel";
 import emailjs from "@emailjs/browser";
 const Contact = () => {
   const formRef = useRef(null);
@@ -187,10 +187,10 @@ const Contact = () => {
             </form>
           </div>
 
-          {/* Right Side (6 columns) - 3D Model */}
-          <div className="xl:col-span-6 col-span-12 min-h-96 rounded-lg overflow-hidden flex-center">
-            <div className="w-full h-full bg-[#e78832] rounded-3xl overflow-hidden">
-              <SimpleComputerModel />
+          {/* Right Side (6 columns) - 3D Model only (calendar removed) */}
+          <div className="xl:col-span-6 col-span-12 min-h-96 rounded-lg overflow-hidden flex flex-col gap-6 items-center">
+            <div className="w-full h-full bg-[#e78832] rounded-3xl overflow-hidden mb-6">
+              <Simplecomputermodel />
             </div>
           </div>
         </div>

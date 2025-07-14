@@ -144,7 +144,7 @@ const Showcase = () => {
               ref={project1Ref}
             >
               <img
-                src="/images/project1.png"
+                src={`${import.meta.env.BASE_URL}images/project1.png`}
                 alt="Ryde"
               />
             </div>
@@ -181,7 +181,7 @@ const Showcase = () => {
               <div className="project-container">
                 <div className="image-wrapper overflow-hidden mb-8">
                   <img
-                    src="/images/project2.png"
+                    src={`${import.meta.env.BASE_URL}images/project2.png`}
                     alt="Library Management Platform"
                     className="rounded-xl"
                   />
@@ -202,7 +202,7 @@ const Showcase = () => {
               <div className="project-container">
                 <div className="image-wrapper overflow-hidden mb-8">
                   <img
-                    src="/images/project3.png"
+                    src={`${import.meta.env.BASE_URL}images/project3.png`}
                     alt="YC Directory"
                     className="rounded-xl"
                   />

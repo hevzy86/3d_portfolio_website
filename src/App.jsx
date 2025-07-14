@@ -1,18 +1,18 @@
 import React from "react";
 import Hero from "./sections/Hero";
 import Showcase from "./sections/Showcase";
-import NavBar from "./components/Navbar";
-import LogoSection from "./sections/LogoSection";
-import FeatureCards from "./sections/FeatureCards";
-import ExperienceSection from "./sections/ExperienceSection";
-import TechStack from "./sections/TechStack";
+import Navbar from "./components/Navbar";
+import LogoSection from "./sections/Logosection";
+import FeatureCards from "./sections/Featurecards";
+import ExperienceSection from "./sections/Experiencesection";
+import TechStack from "./sections/Techstack";
 import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 const App = () => {
   return (
     <>
-      <NavBar />
+      <Navbar />
       <Hero />
       <Showcase />
       <LogoSection />
